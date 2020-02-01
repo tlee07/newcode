@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danny Lee's What is Code 3</title>
+    <link rel="stylesheet" href="styles/mainstylesheet.css">
+
+    
+</head>
+
+
+
+<body>
+
+    
+    
+    
+<div class="foldercontainer">
+    <div class="folder">
+        <div class="trapezoid"></div>
+        <div class="rect"></div>
+        <div class="label"> dev </div>
+    </div>
+
+    <div class="folder">
+        <div class="trapezoid"></div>
+        <div class="rect"></div>
+        <div class="label"> misc </div>
+    </div>
+
+    <div class="folder">
+        <div class="trapezoid"></div>
+        <div class="rect"></div>
+        <div class="label"> design </div>
+    </div>
+   
+    <div id="canvas"></div>
+
+</div>
+
+        
+        
+
+            <div class="box"  id="box3">
+                
+                <div class="barcontainer" id="bar3">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                
+                <p>
+                3 Why Are Programmers So Intense About Languages? <br> 為什麼程序員對語言如此強烈？
+                <p>
+            </div>
+        
+
+
+
+            <div class="box" id="box31">
+                <div class="barcontainer" id="bar31">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p> 
+                3.1 The Beauty of the Standard Library <br> 標準庫的美
+                </p>
+            </div>
+
+
+            
+            <div class="box box32" id="box32">
+                <div class="barcontainer" id="bar32">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p>
+                3.2 What Do Different Languages Do? <br> 不同的語言做什麼？
+                </p>
+            </div>
+
+            <div class="box box33" id="box33">
+                <div class="barcontainer" id="bar33">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p>
+                3.3 The Importance of C <br> C的重要性
+                </p>
+            </div>
+
+            
+            <div class="box box35" id="box35">
+                <div class="barcontainer" id="bar35">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p>
+                3.5 Look How Big and Weird Things Get with Just Python <br> 看看僅Python會帶來多大的變化
+                </p>    
+            </div>
+
+            <div class="box box34" id="box34">
+                <div class="barcontainer" id="bar34">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p>
+                3.4 The Corporate Object Revolution <br> 企業對象革命
+                </p>
+            </div>
+
+            <div class="box box36" id="box36">
+                <div class="barcontainer" id="bar36">
+                    <div class="bar"> </div>
+                    <div class="close">
+                        &times;
+                    </div>
+                </div>
+                <p>
+                3.6 What does Danny think? <br> 丹尼怎麼想?
+                </p>
+            </div>
+
+        
+            
+
+            <!-- <button type="button" id="closebutton">Open/Close</button> -->
+            
+
+
+
+            <div id="p3" class="thing p3">
+                <div class="English"> 
+                    <h2>
+                    3 Why Are Programmers So Intense About Languages?
+                    </h2>
+                    <br><br><br>
+                Many conferences are organized around specific programming languages or specific communities (PyCon for Python programmers; the Strata conference for big data; Oscon for open-source coders); these are ritual events for the people in those communities. Attendees gather, talk, and post the videos on YouTube. Language matters.
+                <br><br><br>
+                Programmers track the success of computer languages the way other people track sports rankings, commenting on Web forums such as Reddit (where many languages get their own “subreddit,” and 
+                <a class="link" href="https://www.reddit.com/r/programming/">reddit.com/r/programming</a> currently has 620,202 readers), or <a class="link" href="https://news.ycombinator.com/">Hacker News</a>, run by the venture capital firm Y Combinator (a company named after a special kind of function that operates on other functions), or <a class="link" href="http://lambda-the-ultimate.org/">Lambda the Ultimate</a> (named after a series of papers written mostly in the 1970s about the influential programming language Scheme—the more inside-baseball the name, the nerdier the subject matter).
+                <br><br><br>
+                There are hundreds of programming blogs. Many large corporations let their engineers blog (a generous gift, given how many recruiters are hovering). Discussions about programming go on everywhere, in public, at all times, about hundreds of languages. There is a keen sense of what’s coming up and what’s fading out.
+                <br><br><br>
+                It’s not simply fashion; one’s career as a programmer depends on demonstrating capacity in one or more languages. So there are rankings, frequently updated, rarely shocking. As of April 15, the world’s most-used computer languages, according to the Tiobe index (which uses a variety of indicators to generate a single ranking for the world of programming), are Java, C, C++, Objective-C, and C#, followed by JavaScript, PHP, and Python. The rankings are necessarily inexact; another list, by a consulting firm called RedMonk, gives JavaScript the top spot, followed by Java. There are many possible conclusions here, but the obvious one is that, all things being equal, a very good Java programmer who performs well in interviews will have more career options than a similar candidate using a more obscure language.
+                <br><br><br>
+                If you code, by the time a language breaks through to the top 10 or 20, you’ve heard of it, read blog posts about it, heard people lament how terrible or wonderful or misguided it is, possibly watched a few video tutorials, or played with it a little. Taking new languages out for a spin is a good thing for a programmer to do. Often all you have to do is download some files and write a couple lines of code, then decide if you want to go further. Most languages are free to download and use.
+                <br><br><br>
+                Why do people construct and then give away free languages? Well, the creation of a good computer language is the work of an apex programmer. To have produced a successful language is acknowledged as a monumental effort, akin to publishing a multivolume history of a war, or fighting in one. The reward is glory.
+                <br><br><br>
+                Changing a language is like fighting that war all over again, and some languages have at times been trapped in a liminal state between their old, busted selves, and their new, promised version. Perl 5, released in the mid-1990s, was a language uniquely suited to the World Wide Web, and it grew as the Web grew; Perl 6 was supposed to be better in every way, and a redesign began with grand pronouncements in 2000. But after 15 years of people working continually and often for free on a project they consider in the public interest, there’s still no official Perl 6. (Latest ETA: Christmas 2015.)
+                <br><br><br>
+                The Python language community, keenly aware of the Perl community’s problems, decided to make necessary but difficult changes to the language as part of the transition from Version 2 to Version 3. They would modernize, clean up rough edges—but avoid grand reinventions. Development of Python 3.0 started in 2006; the first working version came out in 2008; and in 2015, the transition is ongoing.
+                <br><br><br>
+                Making a new language is hard. Making a popular language is much harder still and requires the smile of fortune. And changing the way a popular language works appears to be one of the most difficult things humans can do, requiring years of coordination to make the standards align. Languages are large, complex, dynamic expressions of human culture.
+                <br><br><br>
+                CODE ATLAS Stack Overflow, a website for coders, asked users around the world to tell them which languages and technologies they’ve worked with over the past year. JavaScript was the most-selected language by far. Here, we show which technologies are used at an unusually high rate in each country.
+                <br><br><br> 
+
+                <img id="codeatlas" src="assets/codeatlas.png" alt="codeatlas" width="220%" height="auto">
+
+            </div>
+
+                <div class="Chinese"> 
+                    <h2>
+                    3 為什麼程序員對語言如此強烈？
+                    </h2>
+                    <br><br><br><br>
+                    許多會議都是圍繞特定的編程語言或特定的社區組織的（針對Python程序員的PyCon；針對大數據的Strata會議；針對開源代碼編寫者的Oscon）；以及針對特定編程語言或特定社區的會議。對於那些社區的人們來說，這些都是儀式性的事件。與會者在YouTube上收集，交談和發布視頻。語言很重要。
+                    <br><br><br><br>
+                    程序員跟踪計算機語言的成功像其他人跟踪的運動排名，評論網絡論壇，例如Reddit（其中許多語言中得到自己的“版（Subreddit），”和reddit.com/r/programming~~V目前有620202的讀者），或黑客新聞，由風險投資公司Y Combinator（一家以一種可在其他功能上運行的特殊功能命名的公司）或Lambda the Ultimate（以一系列在1970年代撰寫的有關有影響力的編程語言Scheme-棒球內的名稱越多，主題越小）。
+                    <br><br><br><br><br>
+                    有數百個編程博客。許多大型公司都允許其工程師寫博客（考慮到招聘人員的數量，這是一份慷慨的禮物）。關於編程的討論在任何地方，任何時候，任何時候都在公開場合，涉及約數百種語言。對即將發生的事情和正在消失的事情有敏銳的感覺。
+                    <br><br><br><br>
+                    這不僅僅是簡單的時尚；一個人作為程序員的職業取決於以一種或多種語言展示能力。所以有排名，經常更新，很少令人震驚。截至4月15日，根據Tiobe索引（使用各種指標來生成編程世界的單個排名），全球使用最廣泛的計算機語言是Java，C，C ++，Objective-C和C＃。 ，然後是JavaScript，PHP和Python。排名必然不准確；諮詢公司RedMonk的另一個列表將JavaScript放在首位，其次是Java。這裡有許多可能的結論，但是顯而易見的是，在所有條件都相同的情況下，一個優秀的，在面試中表現出色的Java程序員比使用更晦澀的語言的同類候選人具有更多的職業選擇。
+                    <br><br><br><br>
+                    如果您編寫代碼，等到語言突破前10名或前20名時，您就已經聽說過它，閱讀過有關它的博客文章，聽到人們感嘆它是多麼的可怕，奇妙或被誤導，可能還看了一些視頻教程，或玩一點。對於程序員來說，消磨新語言是一件好事。通常，您要做的就是下載一些文件並編寫幾行代碼，然後確定是否要繼續。大多數語言都可以免費下載和使用。
+                    <br><br><br><br><br>
+                    人們為什麼要構建然後放棄免費語言？好的，一種優秀的計算機語言的創建是頂點程序員的工作。產生一種成功的語言被認為是一項艱鉅的努力，類似於出版多卷戰爭史或一場戰爭。獎勵是榮耀。
+                    <br><br><br><br><br>
+                    更改語言就像重新打一場戰爭，有些語言有時陷入了舊的，破敗的自我與新的應許版本之間的界限狀態。1990年代中期發布的Perl 5是一種獨特的語言，適合於萬維網，並且隨著Web的發展而增長。Perl 6應該在各個方面都更好，並且從2000年開始進行重新設計，並發布了宏偉的聲明。但是經過15年的人們持續不斷地工作並且經常免費為他們認為符合公共利益的項目工作之後，仍然沒有正式的Perl 6。 （最新的預計到達時間：2015年聖誕節。）
+                    <br><br><br><br>
+                    Python語言社區敏銳地意識到Perl社區的問題，因此決定對語言進行必要但困難的更改，作為從版本2到版本3過渡的一部分。他們將進行現代化，清理粗糙的邊緣，但避免大刀闊斧的發明。Python 3.0的開發始於2006年；第一個工作版本於2008年發布；並在2015年過渡。
+                    <br><br><br><br>
+                    製作新語言很困難。製作一種流行的語言要困難得多，並且需要運氣。改變流行語言的工作方式似乎是人類要做的最困難的事情之一，需要多年的協調才能使標准保持一致。語言是人類文化的大型，複雜，動態的表達。
+                    <br><br><br><br><br>
+                    面向程序員的網站CODE ATLAS Stack Overflow要求世界各地的用戶告訴他們在過去一年中使用的語言和技術。到目前為止，JavaScript是最常用的語言。在這裡，我們顯示了每個國家使用哪些技術的比例都異常高。
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="discription">
+                        LANGUAGES SHOWN FOR EACH COUNTRY ARE THOSE WITH THE HIGHEST PERCENT DIFFERENCE BETWEEN THAT COUNTRY'S SELECTION RATE AND THE AVERAGE SELECTION RATE. SOME ANCILLARY TECHNOLOGIES, LIKE SQL SERVER, WERE LEFT OUT.
+                        <br>
+                        每個國家/地區顯示的語言是該國家/地區的選擇率和平均選擇率之間相差最大的語言。一些輔助技術（如SQL SERVER）被忽略了。
+                        </div>
+                </div>
+
+           
+            </div>
+
+
+
+            <div id="p31" class="thing p31">
+            
+                <div class="English"> 
+                    <h2>
+                    3.1 The Beauty of the Standard Library
+                    </h2>
+                    <br><br><br>
+            The true measure of a language isn’t how it uses semicolons; it’s the standard library of each language. A language is software for making software. The standard library is a set of premade software that you can reuse and reapply.
+            <br><br><br>
+            Take Python, which is “batteries included,” meaning that it comes with tons of preexisting code, organized into “modules,” that you can reuse. Its standard library has functions that let you copy Web pages or replace words in a document.
+            <br><br><br>
+            What does that mean, to process text? Well, you might have a string of text (The Quick Brown Fox) and save it in a variable called my_string. So now you can call standard methods on that string. You can say my_string.lower(), and it will make all the words lowercase, producing “the quick brown fox.”
+            <br><br><br>
+            Truly understanding a language’s standard library is one of the ways one becomes proficient in that language. Typically you just visit Web pages or read a book.
+            <br><br><br>
+            But the standard library is only the beginning. For many languages—and Python is exemplary—there’s an enormous library of prewritten modules available for nearly instantaneous download, using “package manager” software. A module (or library, or package) is code that is intended to extend a language’s capabilities.
+            <br><br><br>
+            Let’s say you work for an advertising agency and need to process through 100,000 pictures and scale and sharpen them.
+            <br><br><br>
+            You type one command: sudo pip install Pillow, and the Pillow module is downloaded, compiled automatically, and placed into the correct directory for later reuse. You have to know, of course, that most modern languages have modules for image processing; you also need to know that Pillow is the most commonly used image-processing toolkit. Knowing how to find that out is part of the job of coding. You might learn it by Googling. You might ask a friend. You might get that information out of a book, or a website like The Hitchhiker’s Guide to Python.
+            <br><br><br>
+            A coder needs to be able to quickly examine and identify which giant, complex library is the one that’s the most recently and actively updated and the best match for his or her current needs. A coder needs to be a good listener.
+            <br><br><br>
+            But what a payoff! Now that Pillow is installed, you have, at your typing fingertips, dozens of routines and functions related to image processing that you can use in your code: change colors, rotate by a number of degrees, scale, convert GIF images to JPEGs, and so forth. Or if you need to do very complex numerical analysis and statistics work, you can download NumPy, and suddenly an enormous range of mathematical algorithms are available to you, hundreds of years of science and research boiled down. Audio processing, interacting with peculiar hardware, speaking to databases—there are packages for all of these things. But you need to know how to find them, what they are called. Code isn’t just obscure commands in a file. It requires you to have a map in your head, to know where the good libraries, the best documentation, and the most helpful message boards are located. If you don’t know where those things are, you will spend all of your time searching, instead of building cool new things.
+            <br><br><br>
+                </div>
+
+
+                <div class="Chinese"> 
+                    <h2>
+                    3.1 標準庫的美
+                    </h2>
+                    <br><br><br>
+                    語言的真正衡量標準不是它如何使用分號。這是每種語言的標準庫。語言是用於製作軟件的軟件。標準庫是一組預製軟件，您可以重複使用和重新應用它們。
+                    <br><br><br>
+                    以Python為例，它是“包括電池”，這意味著它附帶了大量的預先存在的代碼，這些代碼被組織成“模塊”，您可以重複使用。它的標準庫具有允許您複製網頁或替換文檔中的單詞的功能。
+                    <br><br><br>
+                    處理文本是什麼意思？好吧，您可能有一個文本字符串（The Quick Brown Fox）並將其保存在名為的變量中my_string。因此，現在您可以在該字符串上調用標準方法。您可以說my_string.lower()，它將使所有單詞都變為小寫，從而產生“快速的棕色狐狸”。
+                    <br><br><br><br>
+                    真正了解一種語言的標準庫是精通該語言的方法之一。通常，您只是訪問網頁或閱讀一本書。
+                    <br><br><br>
+                    但是標準庫僅僅是個開始。對於許多語言（以Python為例），存在一個巨大的預編寫模塊庫，可使用“程序包管理器”軟件進行幾乎即時的下載。模塊（或庫或包）是旨在擴展語言功能的代碼。
+                    <br><br><br><br>
+                    假設您在一家廣告公司工作，需要處理100,000張圖片並對其進行縮放和銳化。
+                    <br><br><br><br>
+                    鍵入一個命令：sudo pip install Pillow，然後將Pillow模塊下載，自動編譯並放置在正確的目錄中，以供以後重用。當然，您必須知道，大多數現代語言都有用於圖像處理的模塊。您還需要知道Pillow是最常用的圖像處理工具包。知道如何找出答案是編碼工作的一部分。您可以通過谷歌搜索學習它。您可能會問一個朋友。您可能會從書本或《 The Hitchhiker's Python指南》這樣的網站中獲得這些信息。
+                    <br><br><br><br>
+                    編碼人員需要能夠快速檢查並確定哪個巨型，複雜的庫是最新，最活躍且最適合其當前需求的庫。編碼員必須是一個好的聽眾。
+                    <br><br><br><br><br>
+                    但是，這是多麼大的回報！現在已經安裝了Pillow，現在您可以用手指輕輕一按，在代碼中使用與圖像處理有關的數十個例程和功能：更改顏色，旋轉一定角度，縮放，將GIF圖像轉換為JPEG，以及等等。或者，如果您需要進行非常複雜的數值分析和統計工作，則可以下載NumPy，突然之間，您可以使用大量的數學算法，數百年的科學和研究工作蒸蒸日上。音頻處理，與特殊硬件的交互，與數據庫的對話-所有這些東西都有包裝。但是您需要知道如何找到它們，它們被稱為什麼。代碼不僅僅是文件中晦澀的命令。它要求您頭腦清晰，知道好的庫，最好的文檔在哪裡，並找到最有用的留言板。如果您不知道這些東西在哪裡，您將花費所有的時間進行搜索，而不是構建新穎的東西。
+                    <br><br><br>
+                    </div>
+
+            </div>
+
+
+            <div id="p32" class="thing p32">
+                <div class="English"> 
+                <h2>
+                3.2 What Do Different Languages Do?
+                </h2>
+                <br><br>
+                <img id="bike" src="assets/fridgebike.jpg" alt="fridgebike" width="90%" height="auto">
+                <br><br><br>
+                If all computer languages do the same thing (make the computer do what you want), then why does it matter which one you choose? For the same reason that you wouldn’t take a bicycle to pick up a fridge or get a physical from an oncological neurosurgeon. Some tools are better for certain jobs.
+                <br><br><br>
+                It’s possible for a C programmer and a Java programmer to read each other’s code, but it’s harder to make C code and Java code work together. C and Java represent the world in different ways, structure data in different ways, and address the components of the computer in different ways. There are true benefits to everyone on a team using the same language. They’re all thinking the same way about how to instruct the computer to process data.
+                <br><br><br>
+                It’s not necessary for every team across a big organization to use the same language. In fact, it’s often counterproductive. Large organizations have lots of needs and use many languages and services to meet them. For example, Etsy is built atop PHP—but its product-search service uses Java libraries, because the solutions for search available in Java are great.
+                <br><br><br>
+                Some programming languages, such as C, will do their best to do exactly as you ask, even if that means crashing your computer. Others, like OCaml and Haskell, are very constrained and ask a programmer to hew to a narrow form, trying to steer you away from anything stupid.
+                <br>
+            <div class="popup" onclick="pop11English()">11
+                    <span class="popuptext" id="myPopup11English">Programmers spend much of their time dealing with different types of data. Let’s say I have a number x, like 7, and a word y, like “cat.” When I multiply x and y, what’s the result? A runtime error in many languages—because you can’t multiply a number by a word. The language Perl returns a zero, which is expedient but baffling, and JavaScript returns “NaN,” for “not a number.”
+                        <br><br>I know, I know.
+                        <br><br>How often are you going to be multiplying sevens and cats? Soooo much. The real world of data is messy, so you’re constantly converting one type of thing into another type—and the shading is subtle. Sometimes an e-mail address is just a bunch of letters and symbols; sometimes it’s a field just plucked from a database; sometimes it’s specially prepared to be sent into the Internet. Programmers write a lot of code that converts data from one type to another.
+                        <br><br>Some languages are incredibly vigilant about types, and what can be done with data of any given type. They push hard for programmers to nail down data types, and the payoff is that these languages can then identify problems before they happen—at “compile time” instead of later, when the program is running. A statically typed language like Java catches you before you multiply a poem or try to find the geographic distance between Chicago and a Social Security number. Other languages are far more caveat programmer.
+                </span>
+            </div>
+
+            <script>
+                function pop11English() {
+                  var popup = document.getElementById("myPopup11English");
+                  popup.classList.toggle("show");
+                }
+            </script>
+
+
+                <br><br><br>
+                Some languages have cute logos, like the Go gopher.
+                <br><br><br><br><br><br><br><br>
+                There’s Scratch, a teaching language for kids. It doesn’t use text much at all but allows li’l coders to move icons around on screen and assemble programs like Legos. Its logo is a smiling cat on two legs.
+                <br><br>
+                <img id="scratchcat" src="assets/scratchcat.png" alt="scratchcat" width="12%" height="auto">
+                <br><br>
+                And then there’s Lisp, which didn’t come with a logo when it was first proposed in the 1950s but now has a community-created five-eyed alien holding a flag with its proboscis. Lisp is a classic language. There are some languages that just have authority, elegance—canonical computer languages.
+                <br><br><br><br><br><br><br>
+                And one of these is C. Most of the popular languages look a lot like it. C’s de facto logo is, well, the letter C. C is called C because it came after another language. That language was called B.
+                <br><br><br>
+                </div>
+
+
+                <div class="Chinese"> 
+                <h2>
+                3.2 不同的語言做什麼？
+                </h2>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="discription">
+                PHOTOGRAPHER: STEVEN BRAHMS FOR BLOOMBERG BUSINESSWEEK; <br>PROP STYLIST: ZACHARY KINSELLA
+                <br>
+                攝影師：史蒂芬·布拉姆斯（STEVEN BRAHMS），彭博商業周刊；<br> 道具設計師：ZACHARY KINSELLA
+                </div>
+                
+                <br><br><br>
+                如果所有計算機語言都執行相同的操作（使計算機執行您想要的操作），那麼為什麼選擇哪種語言無關緊要？出於同樣的原因，您不會騎自行車去拿起冰箱，也不會從腫瘤神經外科醫生那裡得到體檢。有些工具更適合某些工作。
+                <br><br><br>
+                C程序員和Java程序員可以讀取彼此的代碼，但是要使C代碼和Java代碼協同工作更困難。C和Java以不同的方式表示世界，以不同的方式構造數據，並以不同的方式處理計算機的組件。使用相同語言為團隊中的每個人帶來真正的好處。他們都在以同樣的方式思考如何指示計算機處理數據。
+                <br><br><br>
+                大型組織中的每個團隊都不必使用相同的語言。實際上，這通常適得其反。大型組織有很多需求，並使用多種語言和服務來滿足它們。例如，Etsy建立在PHP之上，但是它的產品搜索服務使用Java庫，因為Java中可用的搜索解決方案很棒。
+                <br><br><br>
+                某些編程語言（例如C）將按照您的要求盡其所能，即使這意味著您的計算機崩潰了。其他人，例如OCaml和Haskell，則受到很大的約束，要求程序員以狹義的形式擺弄，試圖使您遠離任何愚蠢的事物。
+                <!-- <button type="button" id="footnote11">11<span>Introduction to HTML and CSS: tooltip with extra text</span></button> -->
+                <!-- <p id="tooltip1"><a href=""></a>11<span>Introduction to HTML and CSS: tooltip with extra text</span></a></p> -->
+
+
+<div class="popup" onclick="pop11Chinese()">11
+  <span class="popuptext" id="myPopup11Chinese">程序員花費大量時間來處理不同類型的數據。假設我有一個數字x（例如7）和一個單詞y（例如“ cat”）。當我將x和y相乘時，結果是什麼？許多語言的運行時錯誤-因為您不能將數字乘以單詞。Perl語言返回的零是權宜之計，但令人困惑，JavaScript返回的是“ NaN”，而不是“不是數字”。
+      <br><br>我知道我知道。
+      <br><br>你多久會乘七隻貓和幾隻貓？太好了 數據的真實世界是混亂的，因此您不斷地將一種類型的事物轉換為另一種類型，並且陰影是微妙的。有時，電子郵件地址只是一堆字母和符號。有時，這是一個從數據庫中摘錄的字段；有時，它是為發送到Internet而特別準備的。程序員編寫了大量代碼，將數據從一種類型轉換為另一種類型。
+      <br><br>某些語言非常警惕類型，對於任何給定類型的數據可以做什麼。它們促使程序員努力確定數據類型，而好處是這些語言可以在問題發生之前即在“編譯時”而不是在程序運行時稍後發現問題。諸如Java之類的靜態類型語言會在您加一首詩或嘗試查找Chicago與社會安全號碼之間的地理距離之前就抓住您。其他語言則更需要程序員注意。
+    </span>
+</div>
+
+<script>
+function pop11Chinese() {
+  var popup = document.getElementById("myPopup11Chinese");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+                <br><br><br>
+                有些語言有可愛的徽標，例如Go gopher。
+                <br><br>
+                <img id="gopher" src="assets/gopher.png" alt="gopher" width="10%" height="auto">
+                <br><br><br>
+                Scratch是一種針對兒童的教學語言。它根本不使用文本，而是允許高級編碼人員在屏幕上四處移動圖標並組裝諸如Legos之類的程序。它的徽標是兩隻腿上的笑臉貓。
+                <br><br><br><br><br><br>
+                然後是Lisp，它在1950年代首次提出時並沒有帶有徽標，但是現在有一個社區創建的五眼外星人，它的鼻子長著國旗。Lisp是一種經典語言。有些語言只具有權威性，高雅性-規範的計算機語言。
+                <br><br>
+                <img id="lisp" src="assets/lisp.png" alt="lisp" width="30%" height="auto">
+                <br><br>
+                其中之一就是C。大多數流行語言看起來都很像。C的事實上的徽標是字母C。C之所以稱為C是因為它是繼另一種語言之後的。該語言稱為B。
+    
+                    
+                </div>
+            </div>
+
+
+
+            <div id="p33" class="thing p33">
+                <div class="English"> 
+                    <h2>
+                    3.3 The Importance of C
+                    </h2>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <div class="discription">
+                        PHOTOGRAPHER: JEREMY LIEBMAN FOR BLOOMBERG BUSINESSWEEK
+                        <br>
+                        攝影師：JEREMY LIEBMAN，彭博商業周刊
+                        </div>
+                    <br><br><br><br>
+                    C is as big a deal as you can get in computing. Created by Dennis Ritchie starting in the late 1960s at Bell Labs, it’s the principal development language of the UNIX operating system. Unix (lowercased now, to refer to the idea of Unix instead of the branded version) is a simple operating system—basically it’s a kernel
+                    
+                    <div class="popup" onclick="pop12English()">12
+                        <span class="popuptext" id="myPopup12English">
+                            A kernel is the lowest level of an operating system. The Linux kernel is like the engine in a car; the dashboard, windshield, tires, and seats come from a variety of sources. The Free Software Foundation asks you to call it GNU/Linux, to honor its roots, and some people follow this suggestion. Most people call it Linux, though, or refer to one of the Linux distributions, i.e., “Red Hat Enterprise Linux,” “Ubuntu Server,” or “Debian.” It’s worth noting that Linux is hardly the only Unix; there’s OpenBSD, FreeBSD, Solaris, AIX, and—well, you get the drift. The charts showing all the Unices are large charts.
+                          </span>
+                      </div>
+                      
+                      <script>
+                      function pop12English() {
+                        var popup = document.getElementById("myPopup12English");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+                    
+                    
+                    that manages memory and runs software, a large collection of very small utility programs, and a “shell” that helps you knit programs into “shell scripts.” If you couldn’t do what you needed with shell scripts, you might write a new utility in C and add it to the utility library. This was a nice and practical way of working, and it coincided with the rise of various kinds of networks that today we refer to collectively as the Internet. So Unix spread from Bell Labs to academia, to large industrial systems, and eventually leached into the water supply of computing until it was everywhere. And everywhere that Unix went, C was sure to go.
+                    <br><br><br>
+                    C is a simple language, simple like a shotgun that can blow off your foot. It allows you to manage every last part of a computer—the memory, files, a hard drive—which is great if you’re meticulous and dangerous if you’re sloppy. Software made in C is known for being fast. When you compile C, it doesn’t simply become a bunch of machine language in one go; there are many steps to making it really, ridiculously fast. These are called optimizations, and they are to programming what loopholes are to taxes. Think of C as sort of a plain-spoken grandfather who grew up trapping beavers and served in several wars but can still do 50 pullups.
+                    <br><br><br>
+                    C’s legendary, lucid manual and specification, The C Programming Language, written by Ritchie and Brian Kernighan (known by its nickname, K&R), is a quick and simple read—physically light in comparison with modern, heavy-stock guides to programming on bookstore shelves. This recommended text was published in 1978, when personal computing barely existed, back when a computer was a large piece of industrial equipment used to control a refrigeration system or calculate actuarial tables. It was in K&R that “Hello, world!” became the canonical example program for any language. By convention, almost every introduction to any programming language since then starts with a variation on “Hello, world!”
+                    <br><br><br>
+                    Here is the ur-text of computational self-introduction:
+                    <br><br>
+                    <img id="introduction" src="assets/introduction.png" alt="introduction" width="100%" height="auto">
+                    <br><br><br>
+                    Which will, when compiled and run, print “Hello, world!” to the screen. Let’s write a program where you give it a number x and it prints out all the squares of the numbers from 1 to x—just the sort of practical, useful program that always appears in programming tutorials to address the needs of people who urgently require a list of squares.
+                    <br><br><br>
+                    To compile this program on a Macintosh, I saved it as squares.c and opened up Terminal.app and typed:
+                    <br><br><br><br><br><br><br>
+                    And it produced:
+                    <br><br>
+                    <img id="produced" src="assets/produced.png" alt="produced" width="100%" height="auto">
+                    <br><br><br>
+                    That runs the GNU C Compiler 
+                    
+                    <div class="popup" onclick="popstarEnglish()">*
+                        <span class="popuptext" id="myPopupstarEnglish">
+                            In recent versions of XCode the gcc command is an alias to clang. Thanks to @kdungs on GitHub </span></div>
+
+                      <script>
+                      function popstarEnglish() {
+                        var popup = document.getElementById("myPopupstarEnglish");
+                        popup.classList.toggle("show");
+                      }
+                      </script> 
+                      
+                      and produces a default file called a.out, which I ran on the command line, 
+                    
+                    <div class="popup" onclick="pop13English()">13
+                        <span class="popuptext" id="myPopup13English">
+                            If you’re old enough to remember DOS, you know what a command line is.                      </div>
+                      
+                      <script>
+                      function pop13English() {
+                        var popup = document.getElementById("myPopup13English");
+                        popup.classList.toggle("show");
+                      }
+                      </script> 
+                    
+                    to get my squared numbers, and bully for me. If I wanted to change the code, I would run the commands, and the program would update accordingly.
+                    <br><br><br>
+                    This isn’t great code by any stretch. 
+                    
+                    <div class="popup" onclick="pop14English()">14
+                        <span class="popuptext" id="myPopup14English">
+                            Disclosure: I’ve written about 500 lines of C code in my life, though I’ve read a lot about the language and worked through many tutorials. As a Web person, I just don’t do the kind of systems work at which it excels. If you work for a large software or hardware company, it’s far more likely you’ll find it in use.                  </div>
+                      
+                      <script>
+                      function pop14English() {
+                        var popup = document.getElementById("myPopup14English");
+                        popup.classList.toggle("show");
+                      }
+                      </script> 
+                    
+                    You just need to squint a little to see that there are small, repeatable units that fit together in certain ways. There’s a function called squares. That’s the important part. You feed it a number, an integer. Then it counts from 1 to that integer and with each count it prints the square of that number. Then it prints a new line. Done.
+                    <br><br><br>
+                    The Linux kernel is written in C. The software that connects your printer to your computer could be in C. The Web servers that serve up your Web pages are often written in C. It’s also a good language for writing other languages—Python, PHP, and Perl are written in C, as are many others. C is a language you use for building systems; it has the same role in computing that Latin did among Renaissance academics. You won’t often meet a serious practitioner of the digital arts who doesn’t have at least a passing familiarity. The more serious scholars are pretty fluent.
+                    <br><br><br>
+                    But remember that list of popular languages? C++? Objective-C? C#? Java? What many people code daily is not actually C, but one of the many Vulgates. Advocates of these languages make various arguments in their favor; they are better for large groups, for “programming in the large.” These languages, they say, organize code into libraries that are shareable, reusable, and less likely to cause pain and suffering. These are object-oriented adaptations of C.
+                    <br><br><br>
+                </div>
+            
+                <div class="Chinese"> 
+                    <h2>
+                    3.3 C的重要性
+                    </h2>
+                    <br><br>
+                    <img id="pullup" src="assets/pullup.jpg" alt="pullup" width="50%" height="auto">
+                    <br><br><br>
+                    在計算中，C與您所能承擔的一樣重要。它是由Dennis Ritchie於1960年代後期在Bell Labs創建的，它是UNIX操作系統的主要開發語言。Unix（現在用小寫字母表示Unix的概念，而不是品牌版本）是一個簡單的操作系統-基本上是一個內核
+                    <div class="popup" onclick="pop12Chinese()">12
+                        <span class="popuptext" id="myPopup12Chinese">
+                            內核是操作系統的最低級別。Linux內核就像汽車中的引擎。儀表板，擋風玻璃，輪胎和座椅有多種來源。自由軟件基金會（Free Software Foundation）要求您將其稱為GNU / Linux，以紀念其起源，並且有人遵循了這一建議。不過，大多數人都將其稱為Linux，或者指的是Linux發行版之一，即“ Red Hat Enterprise Linux”，“ Ubuntu Server”或“ Debian”。那裡有OpenBSD，FreeBSD，Solaris，AIX，而且-嗯，您會遇到麻煩。顯示所有Unices的圖表都是大圖表。
+                          </span>
+                      </div>
+                      
+                      <script>
+                      function pop12Chinese() {
+                        var popup = document.getElementById("myPopup12Chinese");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+                    
+                    
+                    
+                    它管理內存和運行軟件，大量非常小的實用程序，以及一個“ shell”，可以幫助您將程序編織成“ shell腳本”。 C中的實用程序並將其添加到實用程序庫。這是一種很好而實用的工作方式，並且與今天我們統稱為Internet的各種網絡的興起相吻合。因此Unix從貝爾實驗室傳播到學術界，再到大型工業系統，並最終滲透到計算機的供水中，直到無處不在。在Unix所到之處，C一定會成功。
+                    <br><br><br><br><br><br>
+                    C是一種簡單的語言，像like彈槍一樣簡單，可以吹響你的腳。它使您可以管理計算機的每個最後部分-內存，文件和硬盤驅動器-如果您一絲不苟，那就太好了；如果馬虎草率，那會很危險。用C語言製作的軟件以快速而著稱。當您編譯C時，它並不會一become而就成為一堆機器語言。要使它真正地，荒謬地快，有許多步驟。這些被稱為優化，它們是要編程對稅收有什麼漏洞。可以將C看作是一個口齒相傳的祖父，他長大後會誘捕海狸並參加過幾次戰爭，但仍然可以進行50次上拉。
+                    <br><br><br><br>
+                    由Ritchie和Brian Kernighan（以暱稱K＆R著稱）編寫的C傳奇性的，明晰的手冊和規範C編程語言，讀起來快速，簡單，與書店編程的現代繁瑣指南相比，實在是輕巧貨架。該推薦文本於1978年發布，當時個人計算還不存在，當時計算機是用於控制製冷系統或計算精算表的大型工業設備。在K＆R中，“ Hello，world！”成為任何語言的規範示例程序。按照慣例，此後幾乎所有編程語言的介紹都以“ Hello，world！”的變體開始。
+                    <br><br><br><br><br>
+                    這是計算自我介紹的文本：
+                    <br><br><br><br><br><br><br><br><br><br>
+                    編譯並運行後，它將在屏幕上打印“ Hello，world！”。讓我們寫一個程序，給它一個數字x，並打印出從1到x的所有數字的平方。方塊清單。
+                    <br><br><br><br><br><br>
+                    要在Macintosh上編譯此程序，我將其另存為squares.c並打開Terminal.app並鍵入：
+                    <br><br>
+                    <img id="typed" src="assets/typed.png" alt="typed" width="105%" height="auto">
+                    <br><br><br>
+                    它產生了：
+                    <br><br><br><br><br>
+                    運行GNU C編譯器 
+
+                    <div class="popup" onclick="popstarChinese()">*
+                        <span class="popuptext" id="mypopstarChinese">
+                            在最新版本的XCode中，gcc命令是clang的別名。感謝GitHub上的@kdungs                      </span>
+                      </div>
+                      
+                      <script>
+                      function popstarChinese() {
+                        var popup = document.getElementById("mypopstarChinese");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+                    
+                    並生成一個名為的默認文件a.out，該文件是我在命令行上運行的，
+
+                    <div class="popup" onclick="pop13Chinese()">13
+                        <span class="popuptext" id="myPopup13Chinese">
+                            如果您足夠大，可以記住DOS，那麼您知道什麼是命令行。                          </span>
+                      </div>
+                      
+                      <script>
+                      function pop13Chinese() {
+                        var popup = document.getElementById("myPopup13Chinese");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+                    
+                    得到我的平方數，然後欺負我。如果我想更改代碼，我將運行命令，程序將進行相應的更新。
+
+                    <br><br><br>
+                    無論如何這都不是很棒的代碼。 
+                    
+                    <div class="popup" onclick="pop14Chinese()">14
+                        <span class="popuptext" id="myPopup14Chinese">
+                            披露：儘管我已經閱讀了很多有關該語言的內容，並完成了許多教程，但我一生中已經寫了約500行C代碼。作為Web專家，我只是沒有做它擅長的那種系統工作。如果您在大型軟件或硬件公司工作，則很有可能會發現它正在使用中。                       </span>
+                      </div>
+                      
+                      <script>
+                      function pop14Chinese() {
+                        var popup = document.getElementById("myPopup14Chinese");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+
+                    您只需要斜視一下就能看到以某種方式可以組合在一起的小型可重複單元。有一個稱為平方的函數。那是重要的部分。您輸入一個數字，一個整數。然後，它從1到該整數進行計數，並且每次計數都會打印該數字的平方。然後，它將打印新行。做完了。
+                    <br><br><br>
+                    Linux內核是用C編寫的。將打印機連接到計算機的軟件可能是用C編寫的。服務於Web頁面的Web服務器通常用C編寫。這也是編寫其他語言（Python，PHP）的一種好語言。和許多其他Perl一樣，都是使用C語言編寫的。C是您用於構建系統的語言；它在計算方面的作用與文藝復興時期學者在拉丁中的作用相同。您將不會經常遇到一位認真的數字藝術從業者，而他們至少一點也不熟悉。比較認真的學者很流利。
+                    <br><br><br>
+                    但是還記得那個流行語言列表嗎？C ++？目標C？C＃？Java的？許多人每天編寫的代碼實際上不是C，而是眾多Vulgate之一。這些語言的擁護者提出各種主張，對此表示支持。他們說，它們更適合大型團體，適合“大型編程”。他們說，這些語言將代碼組織到可共享，可重用且不太可能引起痛苦的庫中。這些是C的面向對象的改編。
+                    <br><br><br>
+            
+                </div>
+            
+            
+            
+            
+                
+            </div>
+
+
+
+
+            <div id="p34" class="thing p34">
+                <div class="English"> 
+                    <h2>
+                    3.4 The Corporate Object Revolution
+                    </h2>
+            <br><br><br>
+            If you’re going to understand how code works in a corporate environment, you need to understand what object-oriented programming is.
+            <br><br><br>
+            There are many definitions. I’ll wade in and provide my own and face the consequences. Object-oriented programming is, at its essence, a filing system for code. As anyone who’s ever shared a networked folder—or organized a physical filing cabinet—knows, without a good shared filing system your office will implode. C, people said in the 1980s and ’90s, is a great language! An excellent language! But it doesn’t really let you organize things. You end up with all these functions. It’s a mess. I mean, we have this data structure for our customers (name, address, and so forth), and we have all these functions for manipulating that data (update_address, send_bill, delete_account), but the thing is, those functions aren’t related to the data except by the naming convention. C doesn’t have a consistent way to name things. Which means it’s hard to find them later. Object-oriented programming gave programmers a great way to name things—a means of building up a library. I could call (run) update_address on a picture of a dog or an Internet address. That approach is sloppy and dangerous and leads to bugs (our forebears reasoned, and not without precedent), and it makes it hard to program with big teams and keep track of everything.
+            <br><br><br>
+            <img id="octopus" src="assets/octopus.jpg" alt="octopus" width="50%" height="auto">
+            <br><br><br>
+            So what if, whaaaat if, we made a little box called Customer (call it a “class,” as in the taxonomical sense, like a Customer is a subclass of the species human, which is a subclass of mammal, etc.), and we put the data and methods relating to customers into that box. (And by box, it’s literally just “public class Customer {}” and anything inside the {} relates to that particular class.)
+            <br><br><br>
+            I mean, you wouldn’t even need to look inside the box. You’d just download a large set of classes, all nested inside one another, study the available, public methods and the expected data, and start programming. Hey, you’d say, let’s put some data into our object, take some data out. Every time we have a new customer we make a new instance of our class. Code can be a black box, with tentacles and wires sticking out, and you don’t need to—don’t want to—look inside the box. You can just put a couple of boxes next to each other, touch their tentacles together, and watch their eldritch mating.
+            <br><br><br>
+            This works out very well, in theory.
+            <br><br><br>
+            The archetypal object-oriented programming language is Smalltalk, created by a coterie of geniuses at Xerox PARC during that institution’s most glorious of glory days. After years of gestation, Smalltalk was born in 1972, the same year as C, and gelled around 1980. It was inspired by many of the big ideas in computer science, but also by Platonism, by cell biology, and by a predecessor language called Simula, the first object-oriented language, which per its name was designed to … simulate things. While C was created within the New Jersey research facilities (Bell Labs) of an industrial monolith (AT&T) to solve problems at hand, Smalltalk was built at the far-off California outpost of a different industrial monolith, Xerox, to solve the problems of the distant future. Thus Smalltalk represents the world differently than C.
+            <br><br><br>
+            Smalltalk has a funny name and a friendly attitude, but its specification ran to 700 pages. It was a big system. C gave you an abstraction over the entire computer, helping you manage memory and processes inside the machine. Smalltalk gave you an abstraction over all of reality, so you could start dividing the world into classes and methods and the like. Where C tried to make it easier to do computer things, Smalltalk tried to make it easier to do human things.
+            <br><br><br>
+            This isn’t better or worse. It’s just different. Here is some Smalltalk code:
+            <br><br><br><br>
+            It prints that short sentence in the Transcript Window on the user’s screen. The Transcript is an object—and here it’s receiving a message (show:) with an argument—i.e., input—“Hello,” etc. You type that in, select it with your mouse (even in the early 1980s), and tell the computer to execute it. It compiles just that bit of code and adds it to the rest of the running system. It looks like this:
+            <br><br>
+            <img id="this" src="assets/this.png" alt="this" width="100%" height="auto">
+            <br><br><br>
+            The thing is, all those boxes can be manipulated. They’re all objects. It’s almost too powerful: The boundaries that are clear in most languages—between data and code, between files and executables, between the operating system and applications, between closed and open software—all of those borders are fuzzed by design. Smalltalk is a vision of the computer as its own, native medium. The whole system can be modified, by anyone. The dominant version is called Squeak (logo: cute mouse), and a modernized version is called Pharo (logo: lighthouse). Both are free and easy to download.
+            <br><br><br>
+            As a middling programmer I find the Smalltalk environment fascinating, but it never pulls me all the way through the looking glass. One day, I’ve promised myself, I’ll read (or skim with intent) the huge Smalltalk specification from the 1980s—a seminal text and a grand attempt to organize reality along computer principles. The problem is that Smalltalk requires one to adopt not just a method of working but also a philosophy of the world, where everything is organized in a hierarchy of classes. I love to play with it, but I typically stumble back to more familiar approaches. Being an advocate for Smalltalk is a little like being very into Slovenian cinema or free jazz. Some of its advocates are particularly brilliant people. I’m not one of them.
+            <br><br><br>
+            Smalltalk’s history is often described as slightly tragic, because many of its best ideas never permeated the culture of code. But it’s still around, still has users, and anyone can use Squeak or Pharo. Also—
+            <br><br><br>
+            <ol>
+                <li>Java is an object-oriented language, influenced by C++, that runs on a virtual machine (just like Smalltalk).</li>
+                <li>Objective-C, per its name, jammed C and Smalltalk together with no apologies.</li>
+                <li>C# (pronounced “C sharp”) is based on C and influenced by Java, but it was created by Microsoft for use in its .NET framework.</li>
+                <li>C++ is an object-oriented version of C, although its roots are more in Simula.</li>
+            </ol>
+            <br><br><br>
+            The number of digital things conceived in 1972 that are still under regular discussion is quite small. (It was the year of The Godfather and Al Green’s Let’s Stay Together.) The world corrupts the pure vision of great ideas. I pronounce Smalltalk a raging, wild, global success.
+            <br><br><br>
+            </div>
+                    
+
+            <div class="Chinese"> 
+                <h2>
+                3.4 企業對象革命
+                </h2>
+                <br><br><br>
+                如果您要了解代碼在企業環境中的工作方式，則需要了解什麼是面向對象的編程。
+                <br><br><br>
+                有很多定義。我會涉足並提供自己的東西，並面對後果。從本質上講，面向對象編程是代碼的歸檔系統。曾經共享網絡文件夾或組織物理文件櫃的任何人都知道，如果沒有良好的共享文件系統，您的辦公室就會崩潰。人們在1980年代和90年代說C是一門很棒的語言！很棒的語言！但這並不能真正讓您組織事情。您最終將獲得所有這些功能。一團糟。我的意思是，我們必須為我們的客戶這個數據結構（姓名，地址，等等），我們有所有這些功能用於處理數據（update_address，send_bill，delete_account），但事實是，除命名約定外，這些功能與數據無關。C沒有統一的命名方式。這意味著以後很難找到它們。面向對象的編程為程序員提供了一種命名事物的好方法-一種建立庫的方法。我可以update_address在狗的圖片或互聯網地址上打電話（運行）。這種方法草率而危險，並且會導致錯誤（我們的前輩是有道理的，而且並非沒有先例），並且這使得與大團隊一起編程並跟踪所有內容變得困難。
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="discription">
+                    PHOTOGRAPHER: THOMAS ALBDORF FOR BLOOMBERG BUSINESSWEEK; <br> PROP STYLIST: AMÉLIE CHAPALAIN
+                    <br>
+                    攝影師：托馬斯·阿爾布多夫（THOMAS ALBDORF），參加《彭博商業周刊》；<br> 道具設計師：AMÉLIECHAPALAIN
+                    </div>
+                <br><br><br>
+                那麼，如果，如果，我們做了一個小盒子，叫做客戶（Customer）（在分類學意義上稱它為“類”，就像客戶是人類物種的子類，這是哺乳動物的子類，等等），然後將與客戶相關的數據和方法放入該框中。（按方框，從字面上看只是“ public class Customer {}”，並且{}關聯中的任何內容都與該特定類有關。）
+                <br><br><br>
+                我的意思是，您甚至不需要查看框內的內容。您只需下載大量彼此嵌套的類，研究可用的公共方法和期望的數據，然後開始編程。嘿，您會說，讓我們將一些數據放入對像中，取出一些數據。每當我們有新客戶時，我們都會創建班級的新實例。代碼可以是一個黑盒子，伸出的觸手和電線都在外面，您不需要-不想-看一下盒子內部。您可以將幾個盒子彼此相鄰放置，一起觸摸它們的觸角，並觀看它們的長相交配。
+                <br><br><br><br>
+                從理論上講，這很好。
+                <br><br><br><br>
+                原型的面向對象編程語言是Smalltalk，由該機構最輝煌的日子裡施樂PARC的一群天才創建。經過數年的孕育，Smalltalk於1972年誕生，與C同年，並在1980年左右膠著。它的靈感來自於計算機科學中的許多偉大思想，但也受柏拉圖主義，細胞生物學和前代語言的啟發Simula是第一種面向對象的語言，顧名思義，它旨在……模擬事物。雖然C是在新澤西州的一家工業巨石（AT＆T）研究設施（貝爾實驗室）中創建的，目的是解決眼前的問題，但是Smalltalk是在另一座工業巨石Xerox的加利福尼亞遙遠的哨所建造的，用於解決以下問題：遙遠的未來。因此，Smalltalk代表的世界不同於C。
+                <br><br><br><br>
+                Smalltalk的名字取笑和友好的態度，但其規格長達700頁。這是一個很大的系統。C為您提供了整個計算機的抽象，可幫助您管理計算機內部的內存和進程。Smalltalk為您提供了對所有現實的抽象，因此您可以開始將世界劃分為類和方法等。在C試圖簡化計算機工作的地方，Smalltalk試圖簡化人類的工作。
+                <br><br><br><br>
+                這不是好事還是壞事。只是不同而已。這是一些Smalltalk代碼：
+                <br><br>
+                <img id="code" src="assets/code.png" alt="code" width="100%" height="auto">
+                <br><br><br>
+                它在用戶屏幕上的“成績單”窗口中打印該簡短句子。成績單是一個對象，在這裡它接收到(show:)帶有自變量的消息，即輸入“ Hello”等。您鍵入該內容，用鼠標選擇它（即使在1980年代初期），然後告訴計算機執行它。它只編譯那部分代碼，並將其添加到正在運行的系統的其餘部分。看起來像這樣：
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="discription">
+                    Tons of windows all talking to each other. Each window is, well, an object. And instead of programming it and compiling the program, then running it, you just dive right into this living, breathing, window-full environment, and start making new objects that send messages to other objects. If you save where you are, and come back five years later, well, everything will look exactly the same.
+                    <br><br>
+                    數不盡的窗戶互相交談。每個窗口都是一個對象。與其直接編程，編譯程序然後運行，不如直接進入這個充滿生命，呼吸，充滿窗戶的環境，然後開始製作將消息發送到其他對象的新對象。如果您保存自己的位置，然後在五年後回來，那麼，一切將看起來完全一樣。
+                    </div>
+                <br><br><br>
+                問題是，所有這些盒子都可以被操縱。它們都是對象。它幾乎太強大了：在大多數語言中，數據和代碼之間，文件和可執行文件之間，操作系統和應用程序之間，封閉式和開放式軟件之間的界限都是明確的，所有這些界限在設計上都是模糊的。Smalltalk是將計算機視為其自身的本地媒體的願景。任何人都可以修改整個系統。主導版本稱為Squeak（徽標：可愛的鼠標），現代化版本稱為Pharo（徽標：燈塔）。兩者都是免費的，易於下載。
+                <br><br><br>
+                作為一名中級程序員，我發現Smalltalk環境引人入勝，但是它從沒有讓我一路順風。有一天，我向自己保證，我將閱讀（或有意略讀）1980年代巨大的Smalltalk規範，這是開創性的文字，是對按照計算機原理組織現實的巨大嘗試。問題在於，Smalltalk不僅需要採用一種工作方法，還需要採用一種世界哲學，在世界哲學中，一切都按照類的層次結構進行組織。我喜歡玩它，但是我通常會偶然發現更熟悉的方法。成為Smalltalk的擁護者有點像非常喜歡斯洛文尼亞電影或免費爵士樂。它的一些擁護者是特別聰明的人。我不是其中之一。
+                <br><br><br><br><br>
+                Smalltalk的歷史常常被描述為是悲慘的，因為它的許多最佳想法從未滲透到代碼文化中。但是它仍然存在，仍然有用戶，任何人都可以使用Squeak或Pharo。也-
+                <br><br><br>
+                <ol>
+                    <li>Java是受C ++影響的面向對象的語言，可在虛擬機上運行（就像Smalltalk一樣）。</li>
+                    <li>顧名思義，Objective-C干擾了C和Smalltalk，沒有道歉。</li>
+                    <li>C＃（發音為“ C Sharp”）基於C並受Java影響，但它是由Microsoft創建的，用於其.NET框架。</li>
+                    <li> ++是C的面向對象版本，儘管其根源更多於Simula。</li>
+                </ol>
+                <br><br><br>
+                1972年構思並仍在定期討論中的數字事物的數量非常少。（那是教父和艾爾·格林（Al Green）的“ 讓我們在一起”的一年。）世界破壞了偉大思想的純粹願景。我說Smalltalk取得了狂野的，全球性的成功。
+                <br><br><br>
+            </div>
+        </div>
+
+
+
+            <div id="p35" class="thing p35">
+                <div class="English"> 
+                <h2>
+                3.5 Look How Big and Weird Things Get with Just Python
+                </h2>
+                <br>
+                Python is a very interesting language and quite popular, too. It’s object-oriented but not rigid. 
+
+                <div class="popup" onclick="pop15English()">15
+                    <span class="popuptext" id="myPopup15English">
+                        “Object-oriented,” “imperative,” and “functional” are paradigms; a language like Python is referred to as “multiparadigm.”                      </span>
+                  </div>
+                  
+                  <script>
+                  function pop15English() {
+                    var popup = document.getElementById("myPopup15English");
+                    popup.classList.toggle("show");
+                  }
+                  </script> 
+                
+                And it’s widely understood to be easier than C for programmers to use, because it provides more abstractions for programmers to reuse. It hides much of the weirdness of the computer and many details of how computation is performed. Python is usually slower than C; this is the price you pay for all those sweet levels of abstraction. In the vast majority of cases this difference in speed truly doesn’t matter, regardless of how much people protest. It’s only of consequence when you’ve built up a system in Python and a part of it runs millions or billions of times, slowing down the computer—and thus requiring more resources to get its work done.
+                <br> <br><br>
+                What then? Does this mean you need to throw away all your Python and start over in some other language? Probably not. Python has a deserved reputation as a “glue language,” meaning you can take code from other, lower-level languages such as C, C++, and Fortran 77 (yes, as in the year 1977), code that is close to the machine and known to be sound, and write “wrapper functions.” That is, you can embed the older, faster code in the newer, slower, but easier-to-use system.  
+                <br> <br><br>
+                A big part of this process is in wrapping up the old code in nice, well-organized Python functions. In many ways the idiom of a language is not just how it looks but also how it feels. Some languages emphasize brevity. Some support long, complex functions, while others encourage you to break up functionality into small pieces. Style and usage matter; sometimes programmers recommend Strunk & White’s The Elements of Style—that’s right, the one about the English language. Its focus on efficient usage resonates with programmers. The idiom of a language is part of its communal identity.
+                <br> <br><br>
+                Python is not the glue for everything, though. It’s hard to connect to Java but fits C hand to glove. There’s a version of Python designed to run inside of Java and use Java code. That’s called Jython. If you want a version that works with Microsoft’s .NET, you can go with IronPython.
+                <br> <br><br>
+                But there’s another way to interpret all this activity around Python: People love it and want it to work everywhere and do everything. They’ve spent tens of thousands of hours making that possible and then given the fruit of their labor away. That’s a powerful indicator. A huge amount of effort has gone into making Python practical as well as pleasurable to use. There are lots of conferences, frequent code updates, and vibrant mailing lists. You pick a language not just on its technical merits, or its speediness, or the job opportunities it may present, but also on its culture.
+                <br> <br><br>  
+                Python people, generally, are pretty cool.
+                <br> <br><br>    
+            </div> 
+                
+
+                
+            
+                <div class="Chinese"> 
+                <h2>
+                3.5 看看僅Python會帶來多大的變化
+                </h2>
+                <br> <br>
+                Python是一種非常有趣的語言，也很受歡迎。它是面向對象的，但不是嚴格的。
+                
+                <div class="popup" onclick="pop15Chinese()">15
+                    <span class="popuptext" id="myPopup15Chinese">
+                        “面向對象”，“命令式”和“功能性”是范例；像Python這樣的語言被稱為“ multiparadigm”。                      </span>
+                  </div>
+                  
+                  <script>
+                  function pop15Chinese() {
+                    var popup = document.getElementById("myPopup15Chinese");
+                    popup.classList.toggle("show");
+                  }
+                  </script>
+                
+                對於程序員而言，它比C語言更容易使用，因為它為程序員提供了更多的抽像以供重用。它掩蓋了計算機的許多怪異之處以及如何執行計算的許多細節。Python通常比C慢。這是您為所有這些甜蜜的抽象級別支付的價格。在大多數情況下，無論有多少人抗議，這種速度差異實際上都沒有關係。只有當您使用Python構建了一個系統，並且該系統的一部分運行了數百萬或數十億次，從而減慢了計算機的速度，因此需要更多資源才能完成工作時，這才有意義。
+                <br> <br><br><br><br>
+                然後怎樣呢？這是否意味著您需要丟棄所有Python並以其他某種語言重新開始？可能不會。Python被譽為“膠合語言”，這意味著您可以從其他較低級的語言（例如C，C ++和Fortran 77）中獲取代碼（是的，在1977年），它們接近於機器。並稱為“包裝函數”。也就是說，您可以將舊的，更快的代碼嵌入到更新，更慢但更易於使用的系統中。
+                <br> <br><br><br>
+                該過程的很大一部分是將舊代碼包裝在組織良好的Python函數中。在許多方面，語言的成語不僅在於它的外觀，還在於它的感覺。一些語言強調簡潔。有些支持長而復雜的功能，而另一些則鼓勵您將功能分解為小塊。樣式和用法很重要；有時，程序員會推薦Strunk＆White的《風格元素》 —是的，這是關於英語的。它對高效使用的關注引起了程序員的共鳴。語言的習語是其社區身份的一部分。
+                <br> <br><br><br>
+                但是，Python並不是萬能的粘合劑。很難連接到Java，但是適合C手。有一個Python版本，旨在在Java內部運行並使用Java代碼。那叫Jython。如果您想要一個適用於Microsoft .NET的版本，則可以使用IronPython。
+                <br> <br><br>
+                但是還有另一種方式來解釋圍繞Python的所有活動：人們喜歡它，並希望它在任何地方都可以工作並做所有事情。他們花費了數万小時來使之成為可能，然後將辛勤勞動的成果轉移了出去。這是一個有力的指標。為了使Python既實用又易於使用，我們付出了巨大的努力。有很多會議，頻繁的代碼更新和充滿活力的郵件列表。您不僅要選擇一種語言，不僅要考慮其技術優勢，速度或可能帶來的工作機會，還取決於其文化。
+                <br> <br><br>
+                通常，Python的人都很酷。
+                </div>
+                
+            
+        
+
+            </div>
+            
+
+
+            <div id="p36" class="thing p36">
+                <div class="English"> 
+                <h2>
+                3.6  What does Danny think?
+                </h2>
+                <br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br><br>
+                <div class="discription">
+                    MOTION GRAPHIC DESIGNER: DANNY LEE(TING-HSUN LEE); 
+                    <br>
+                    平面動畫設計師：李定宣(DANNY LEE);
+                    </div>
+                     <br><br><br> <br><br>
+                Programming languages are essentially just like languages we speak on a daily basis. They are communication tools we use to talk to computers, but also a channel for us to communicate with each other, making sure we understand each other’s thinking process toward problems. It’s fascinating to learn from the article about how various languages were designed and formulated. And even communities were born from usages of different languages, for instance, the Python language community and the Perl community. 
+                <br> <br><br>
+                To put programming languages and languages in comparison, they are alike in many ways. Similarly, multiple languages used on our daily basis represented different cultures and communities as well. They were also tools designed for different jobs, and we choose different tools for different purposes. As Ford mentioned at the end of paragraph 3.5, “You pick a language not just on its technical merits, or its speediness, or the job opportunities it may present, but also on its culture,” programming languages have characteristics like linguistic languages or all of us humans do. Some examples extracted from Ford’s article, such as 
+                <ol>
+                    <li> C is a language you use for building systems; it has the same role in computing that Latin did among Renaissance academics.</li>
+                    <li>Think of C as sort of a plain-spoken grandfather who grew up trapping beavers and served in several wars but can still do 50 pullups.</li>
+                </ol>
+                <br> <br><br>
+                Today, more and more designers are aware of exclusive traits that underlies systems and objects in our daily life. In that regard, I wonder if programming languages could be more inclusive for people with different needs: different cultural backgrounds, physical or mental limitations or barriers of entering the programming world? Programming languages have served as a standardized communication for all programmers, however, I believe there are many underserved needs that we were pushed aside to not pause and think for them as we progress faster with technological advancements. 
+                <br> <br><br>
+                Take myself as a minor example, I found myself frequently jumping back and forth between English and Chinese since Chinese as well as Taiwanese (A dialect hence no written form) are the languages that I’m most familiar with, and English serves subsequently. Languages to me are tools and access to acquire knowledge, however, languages also become barriers for entry to information and obstacles to quickly absorb information. Undoubtedly, it has also bothered many Chinese speakers not being able to fully grasp the essence of a piece of knowledge because of English-based culture.  
+                <br> <br><br>
+                This is why I decided to make this design decision for my website - having Chinese, my first language and for millions of other Chinese-speaking demographics, as a cross reference when reading an article. It is a symbolic representation to aim to bring awareness to the exclusive culture of both programming languages and linguistic languages.
+                <br> <br><br>
+                As Luise Drulhe also pointed out in his article "Critical Atlas of the Internet”, programming languages, the cloud computing environment, as well as the ecosystem are still very much US-centric.  I wonder how much impact have brought to users like everyone of us with knowledge being highly focused in the US. Perhaps we don’t feel the direct effect, yet I believe it slowly takes away our control, our thought process and culture.
+                <br> <br><br>
+                In addition to being US-centric, these programming languages seem to have high bars for entry.  For instance, affordability(hardwares and softwares), physical abilities(type on a keyboard), intelligence(literacy), and so on.  I’m very excited to know that many companies have been working on inclusive design for lowering the bar of programming languages, such as 
+                <a class="link" href="https://blogs.microsoft.com/ai/project-torino-microsoft-creates-physical-programming-language-inclusive-visually-impaired-children/">Microsoft’s Torito project</a>
+                , allowing visually impaired children to learn about programming languages as well as 
+                <a class="link" href="https://csfirst.withgoogle.com/s/en/home">Google’s education tool </a>
+                to allow teachers to learn how to teach kids CS in a fun, engaging way. 
+                <br> <br><br>
+                Even though my design approach to the website is relatively small compared to projects mentioned above, I hope to continue forward with designing for needs while learning new and essential knowledge.
+                <br> <br><br>
+
+
+                </div>
+            
+
+                <div class="Chinese"> 
+                <h2>
+                3.6 丹尼怎麼想？
+                </h2>
+                <br> <br><br>
+                <img id="inclusive" src="assets/inclusive_AME/inclusive.gif" alt="inclusive" width="80%" height="auto">
+
+                <br><br><br><br> <br>
+                編程語言本質上就像我們每天都會說的語言一樣。它們是我們用來與計算機對話的交流工具，也是我們彼此交流的渠道，可確保我們了解彼此對問題的思考過程。從這篇文章中學習有關如何設計和製定各種語言的內容非常有趣。甚至社區也源於不同語言的使用，例如Python語言社區和Perl社區。
+                <br> <br><br>
+                為了比較編程語言和比較語言，它們在許多方面都是相似的。同樣，我們每天使用的多種語言也代表著不同的文化和社區。它們也是為不同工作而設計的工具，我們為不同目的選擇了不同的工具。正如福特在第3.5段末尾提到的：“您不僅要選擇一種語言，既要考慮其技術優點，速度，可能帶來的工作機會，也要取決於其文化。”編程語言具有語言或所有語言的特性。我們人類從福特的文章中摘錄的一些示例，例如
+                <br> <br><br>
+                <ol>
+                <li>C是您用於構建系統的語言；它在計算方面的作用與文藝復興時期學者在拉丁中的作用相同。</li>
+                <li>可以將C看作是一個口齒相傳的祖父，他長大了，捉住了海狸，參加過幾次戰爭，但仍然可以做50次上拉。</li>
+                </ol>
+                <br> <br><br>
+                如今，越來越多的設計師意識到構成我們日常生活中的系統和對象的獨特特徵。 在這方面，我想知道編程語言是否可以針對具有不同需求的人包括更多內容：不同的文化背景，身體或精神上的限製或進入編程世界的障礙？ 編程語言已成為所有程序員的標準化交流方式，但是，我相信隨著我們技術進步的不斷加快，我們不得不將許多未得到充分滿足的需求拋在一邊，不要停下來思考它們。
+                <br> <br><br>
+                以我自己為例，我發現自己經常在英文和中文之間來回跳動，因為中文和台灣人（一種方言，因此沒有書面形式）是我最熟悉的語言，隨後便使用英語。對我而言，語言是獲取知識的工具和途徑，但是，語言也成為獲取信息的障礙和迅速吸收信息的障礙。毫無疑問，由於以英語為基礎的文化，它也困擾了許多說中文的人，他們無法完全掌握知識的本質。
+                <br> <br><br>
+                這就是為什麼我決定為我的網站做出此設計決定的原因-閱讀文章時要以中文（我的母語）以及數百萬其他講漢語的人口統計數據作為參考。它是一種符號表示，旨在使人們意識到編程語言和語言語言的專有文化。
+                <br> <br><br>
+                正如Luise Drulhe在他的文章“互聯網的關鍵圖集”中所指出的那樣，編程語言，雲計算環境以及生態系統仍然以美國為中心。我們的知識高度集中在美國，也許我們沒有直接的影響，但我相信它會慢慢奪走我們的控制權，思維過程和文化。
+                <br> <br><br>
+                除了以美國為中心之外，這些編程語言似乎還有很多入門標準。例如，負擔能力（硬件和軟件），物理能力（鍵盤上的鍵入），智力（讀寫能力）等等。令我感到非常興奮的是，許多公司一直在致力於降低編程語言門檻的兼容設計，例如
+                <a class="link" href="https://blogs.microsoft.com/ai/project-torino-microsoft-creates-physical-programming-language-inclusive-visually-impaired-children/">微軟的Torito項目</a>，
+                該項目使視障兒童能夠學習編程語言以及
+                <a class="link" href="https://csfirst.withgoogle.com/s/en/home">Google的教育工具</a>
+                ，以使教師能夠學習如何以有趣，引人入勝的方式教孩子們CS。
+                <br> <br><br>
+                儘管與上述項目相比，我對網站的設計方法相對較小，但我希望在學習新的基本知識的同時繼續進行需求設計。
+                <br> <br><br>
+
+            </div>
+
+                
+        
+                        
+            </div>
+
+                
+        
+
+                <script>
+                    var box3 = document.getElementById("box3");
+                    var box31 = document.getElementById("box31");
+                    var box32 = document.getElementById("box32");
+                    var box33 = document.getElementById("box33");
+                    var box34 = document.getElementById("box34");
+                    var box35 = document.getElementById("box35");
+                    var box36 = document.getElementById("box36");
+                    var p3 = document.getElementById("p3");
+                    var closebutton = document.getElementById("closebutton");
+                    var canvas = document.getElementById("canvas");
+
+
+        
+        
+
+                    box3.addEventListener("click", function() {
+                    p3.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-markread");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-fadeOut");
+
+                    });
+
+                
+
+
+
+                    box31.addEventListener("click", function() {
+                    p31.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-markread");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-fadeOut");
+                    });
+
+                    box32.addEventListener("click", function() {
+                    p32.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-markread");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-fadeOut");
+                    
+                    });
+
+                    box33.addEventListener("click", function() {
+                    p33.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-markread");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-fadeOut");
+                    });
+
+                    box34.addEventListener("click", function() {
+                    p34.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-markread");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-fadeOut");
+                    });
+
+                    box35.addEventListener("click", function() {
+                    p35.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-markread");
+                    box36.classList.toggle("m-fadeOut");
+                    });
+
+                    box36.addEventListener("click", function() {
+                    p36.classList.toggle("m-fadeIn");
+                    box3.classList.toggle("m-fadeOut");
+                    box31.classList.toggle("m-fadeOut");
+                    box32.classList.toggle("m-fadeOut");
+                    box33.classList.toggle("m-fadeOut");
+                    box34.classList.toggle("m-fadeOut");
+                    box35.classList.toggle("m-fadeOut");
+                    box36.classList.toggle("m-markread");
+                    });
+
+
+                    canvas.addEventListener("click", function() {
+                    p3.classList.toggle("disappear");
+                    p31.classList.toggle("disappear");
+                    p32.classList.toggle("disappear");
+                    p33.classList.toggle("disappear");
+                    p34.classList.toggle("disappear");
+                    p35.classList.toggle("disappear");
+                    p36.classList.toggle("disappear");
+         
+                    });
+
+                </script>
+
+
+        
+    
+
+    
+</body>
+
+
+
+
+
+
+
+
+</html>

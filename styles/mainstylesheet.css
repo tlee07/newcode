@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+
+
+body{
+    /* background-color:#525252; */
+    background-color:#3A6EA5 ;
+    background-size:1690px 1050px;
+    background-repeat: no-repeat;
+    background-image: url(https://d7hftxdivxxvm.cloudfront.net/?resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=1200&quality=80); 
+    background-image:url(/Users/qq77788qq/Documents/github2/hw1-2/assets/ds4-07.png);
+}
+
+
+
+#canvas{
+    background-color:white 0;
+    width:1700px;
+    height:3000px;
+    margin-left:-120px;
+    margin-top:-600px;
+}
+
+
+
+.box{
+    font-family: 'Roboto', sans-serif;
+    border:1px solid black;
+    background-color:white;
+    font-weight: bold;
+    font-size:22px;
+
+}
+
+p{
+    margin:30px;
+}
+
+.box:hover{
+    background-color: rgb(216, 216, 216);
+    transform: scale(1.1);
+    box-shadow: 4px 4px 8px  black;
+    
+
+}
+
+
+
+.barcontainer{
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+}
+
+.bar{
+    background-color: black;
+}
+
+.close{
+    background-color: black;
+    color:white;
+}
+
+#box3{
+    position: absolute;
+    width: 375px;
+    height:220px;
+    left: 1075px;
+    top: 200px;
+}
+
+#bar3{
+    height:20px;
+    width:375px;
+}
+
+
+#box31{
+    position: absolute;
+    width: 340px;
+    height:180px;
+    left: 450px;
+    top: 300px; 
+}
+
+#bar31{
+    height:20px;
+    width:340px;
+}
+
+#box32{
+    position: absolute;
+    width: 350px;
+    height:280px;
+    left: 620px;
+    top: 430px;
+
+}  
+
+#bar32{
+    height:20px;
+    width:350px;
+}
+
+#box33{ 
+    position: absolute;
+    width: 360px;
+    height:150px;
+    left: 920px;
+    top: 600px;
+}  
+
+#bar33{
+    height:20px;
+    width:360px;
+}
+
+#box34{
+    width: 320px;
+    height: 250px;
+    position: absolute;
+    left: 530px;
+    top: 650px;
+}  
+
+#bar34{
+    height:20px;
+    width:320px;
+}
+
+.box35{
+    width: 300px;
+    position: absolute;
+    left: 250px;
+    top: 550px;
+
+}  
+
+#bar35{
+    height:20px;
+    width:300px;
+}
+
+.box36{
+    width: 300px;
+    position: absolute;
+    left: 1120px;
+    top: 700px;
+}  
+
+#bar36{
+    height:20px;
+    width:300px;
+}
+
+
+
+
+.thing {
+    width:1200px;
+
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+    top: 100px;
+    visibility: hidden;
+    padding-left:5em;
+    padding-right:5em;
+    padding-top:2em;
+    padding-bottom:2em;
+
+    margin-left: 10em;
+    margin-right: 5em;
+    margin-top: 5em;
+    background: white;
+    border: 1px solid black;
+    font-size:17px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .p3{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+
+.p31{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+
+
+.p36{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+
+  .p35{
+      display: grid;
+      grid-gap:7em;
+      grid-auto-flow: column;
+  }
+
+  .p34{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+
+  .p33{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+
+  .p32{
+    display: grid;
+    grid-gap:7em;
+    grid-auto-flow: column;
+}
+  
+
+  .link{
+      color:black;
+  }
+
+  .link:hover{
+    color:white;
+    background-color:black;
+
+}
+
+
+
+  .m-fadeIn {
+    visibility: visible;
+    opacity: 1;
+    z-index:5;
+    transition: visibility 0s linear 0s, opacity 300ms;
+  }
+
+  .m-fadeOut {
+    visibility: visible;
+    opacity: 0.1;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+
+  .m-markread {
+    visibility: visible;
+    opacity: 1;
+    z-index:1;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+
+  .disappear{
+      visibility:hidden;
+      z-index:-10;
+  }
+
+  .appear{
+    visibility:visible;
+    opacity:1;
+}
+
+#closebutton{
+    position: absolute;
+    left:800px; 
+    top:120px;
+}
+
+.discription{
+    color:lightgrey;
+    font-size:12px;
+}
+
+.foldercontainer{
+    margin-top:100px;
+    margin-left: 100px;
+    display:grid;
+    grid-row-gap: 5em;
+}
+  
+
+
+.rect{
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    width: 80px;
+    height: 50px;
+
+}
+
+
+
+.trapezoid {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: -10px;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 30px;
+}
+
+.label{
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   margin-left: -10px;
+   margin-top: 60px;
+   /* text-decoration: underline; */
+   
+   width:100px;
+   height:10px;
+   text-align: center;
+}
+
+
+
+
+
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border:2px solid black;
+    background-color:black;
+    color:white;
+    /* border-radius:10%; */
+    font-size:14px;
+    
+  }
+
+  .popup:hover{
+    transform: scale(1.1);
+    /* box-shadow: 2px 2px 5px  black; */
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 270px;
+    /* background-color: #C4C4C4; */
+    /* background-color:#3B75BD; */
+    background-color:white;
+    color: black;
+    border:1px solid black;
+    /* text-align: center; */
+    padding: 1.5em;
+    font-size:16px;
+    font-family:'Roboto light', sans-serif, ;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 150%;
+    margin-left: 30px;
+    font-weight:300;
+    /* margin-bottom: 30px; */
+  }
+  
+  
+
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
